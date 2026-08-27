@@ -1,0 +1,33 @@
+body{
+    background-image: url(../img/conejo.jpg);
+    background-color: aqua;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+.titulo{
+    color: rgb(57, 250, 57);
+    text-align: center;
+}
+.caja{
+    background-color: aliceblue;
+    color: red;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid rebeccapurple;
+    width: 350px;
+    height: 60px;
+}
+.caja-bloque{
+    display: inline;
+}
+.caja-bloque{
+    display: block;
+    background-color: aquamarine;
+}
+.caja-enlinea-bloque{
+    display: inline-block;
+    background-color: blue;
+}
