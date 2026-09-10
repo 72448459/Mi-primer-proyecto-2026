@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ejercicios</h1>
+    tarea:
+    <input type="text" id="tarea" placeholder="Ingrese su tarea">
+    <fieldset>
+        <legend>Seleccione una opcion:</legend>
+        <input type="radio" name="trabajo" value="1">Completada
+        <input type="radio" name="trabajo" value="2">Incompleta
+    </fieldset>
+    <select name="tarea" id="tareaSelect">
+        <option value="">Seleccione una tarea</option>
+        <option value="Completado">Completada</option>
+        <option value="Incompleto">Incompleta</option>
+    </select>
+    <br>
+    <button onclick="agregarTarea()">Adicionar Tarea</button>
+    <button onclick="mostrarTareas()">MostrarTareas</button>
+    <button onclick="eliminarTarea()">EliminarTarea</button>
+     <p>Este es un parrafo de ejemplo.</p>
+     <p id="respuesta"></p>
+    <script src="script/ejemplo1.js"></script>
+
+</body>
+</html>
