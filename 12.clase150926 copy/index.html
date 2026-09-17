@@ -9,28 +9,32 @@
 <body>
     <h1 class="titulo">CREACION DE TABLAS</h1>
     <H2 class="titulo1">Lista de estudiantes</H2>
+    <br>
+    <h1>Lista de personas</h1>
+    Nombre: <input type="text" id="nombre"><br><br>
+    Apellido: <input type="text" id="apellido"><br><br>
+    Edad: <input type="number" id="edad"><br><br>
+    Genero: 
+    <select id="genero">
+        <option value="Femenino">Femenino</option>
+        <option value="Masculino">Masculino</option>
+        <option value="Otro">Otro</option>
+    </select><br><br>
+    <button id="btnAdicionar">Adicionar</button>
+    <br><br>
     <table>
+        <thead>
+            <tr>
+                <th>Nro</th>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Fecha de Nacimiento</th>
+                <th>Edad</th>
+                <th>Genero</th>
+            </tr>
         </thead>
-</tr>
-<th>Nro</th>
-<th>Nombre</th>
-<th>Apellido</th>
-<th>Fecha de Nacimiento</th>
-<th>Edad</th>
-<th>Genero</th>
-</tr>
-</thead>
-<tbody id="datos">
-    <tr>
-       <td>1</td>
-       <td>Abril</td>
-       <td>Chambi</td>
-       <td>12/09/2000</td>
-       <td>26</td>
-       <td>Femenino</td>
-        </tr>
-        </body>
-        </table> 
-        <script src="./script/ejemplo1.js"></script>  
+        <tbody id="datos"></tbody>
+    </table> 
+    <script src="./script/ejemplo1.js"></script>  
 </body>
 </html>

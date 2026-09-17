@@ -1,36 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lista de estudiantes</title>
     <link rel="stylesheet" href="../assets/css/miestilo11.css">
 </head>
 <body>
-    <h1 class="titulo">CREACION DE TABLAS</h1>
-    <H2 class="titulo1">Lista de estudiantes</H2>
-    <table>
-        </thead>
-</tr>
-<th>Nro</th>
-<th>Nombre</th>
-<th>Apellido</th>
-<th>Fecha de Nacimiento</th>
-<th>Edad</th>
-<th>Genero</th>
-</tr>
-</thead>
-<tbody id="datos">
-    <tr>
-       <td>1</td>
-       <td>Abril</td>
-       <td>Chambi</td>
-       <td>12/09/2000</td>
-       <td>26</td>
-       <td>Femenino</td>
-        </tr>
-        </body>
-        </table> 
-        <script src="./script/ejemplo1.js"></script>  
+    <main class="contenedor">
+        <header>
+            <h1 class="titulo">CREACIÓN DE TABLAS</h1>
+            <h2 class="titulo1">Lista de estudiantes</h2>
+        </header>
+
+        <section class="registro" aria-labelledby="titulo-registro">
+            <h3 id="titulo-registro">Registrar nueva persona</h3>
+            <form id="formulario-persona">
+                <div class="campos-formulario">
+                    <label>Nombre<input type="text" id="nombre" required></label>
+                    <label>Apellido<input type="text" id="apellido" required></label>
+                    <label>Fecha de nacimiento<input type="date" id="fecNac" required></label>
+                    <label>Edad<input type="number" id="edad" min="1" max="120" required></label>
+                    <label>Género
+                        <select id="genero" required>
+                            <option value="">Selecciona</option>
+                            <option>Femenino</option>
+                            <option>Masculino</option>
+                            <option>Otro</option>
+                        </select>
+                    </label>
+                </div>
+                <button type="submit">Registrar persona</button>
+            </form>
+            <p id="mensaje" aria-live="polite"></p>
+        </section>
+
+        <section class="buscador" aria-labelledby="titulo-buscador">
+            <h3 id="titulo-buscador">Buscar estudiante</h3>
+            <label for="buscar">Nombre o apellido</label>
+            <input type="search" id="buscar" placeholder="Ej.: Abril o Chambi" autocomplete="off">
+            <p id="resultado" aria-live="polite"></p>
+        </section>
+
+        <section class="tabla-contenedor" aria-label="Tabla de estudiantes">
+            <table>
+                <caption>Estudiantes registrados</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Nro</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Apellido</th>
+                        <th scope="col">Fecha de nacimiento</th>
+                        <th scope="col">Edad</th>
+                        <th scope="col">Género</th>
+                    </tr>
+                </thead>
+                <tbody id="datos"></tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="./script/ejemplo1.js"></script>
 </body>
 </html>
