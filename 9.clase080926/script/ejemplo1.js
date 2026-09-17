@@ -26,7 +26,11 @@ function mostrarTareas(){
     console.log("Mostrar lista de tareas:");
     tareas.forEach((tarea, indice) =>{
         // console.log(´${indice+1}.[${tarea.completada ? 'completada' : 'Incompleto'}] ${tarea.descripcion}´)
-        console.log(indice+1,tarea.descripcion);      
+        console.log(indice+1,tarea.descripcion); 
+        respuestaHtml = ˋ<ul>ˋ ;
+         respuestaHtml += ˋ<ul>ˋ${indice + 1}; [${tarea.descripcion}]$ˋ
+
+
                 });
             }
 
@@ -35,4 +39,4 @@ agregarTarea("Compra leche","completado");
 agregarTarea("Hacer ejercico","completado");
 agregarTarea("Estudiar JavaScript","Incompleto");
 agregarTarea("Subir a Github","Incompleto");
-mostrarTareas();
+mostrarTareas();   
